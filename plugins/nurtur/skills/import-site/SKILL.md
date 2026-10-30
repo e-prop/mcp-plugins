@@ -1,6 +1,6 @@
 ---
-description: Import an estate agency's existing website into Nurtur Websites, into a site whose setup wizard was finished with "Import an existing website". Give the site's id, shown in the wizard, or its name. Asks nothing else; the wizard recorded the existing website and whether it moves onto one of our templates.
-argument-hint: "<site id or name>"
+description: Import an estate agency's existing website into Nurtur Websites, into a site whose setup wizard was finished with "Import an existing website". Give the site's id or name, or nothing to choose from a checklist of the sites waiting. Asks nothing else; the wizard recorded the existing website and whether it moves onto one of our templates.
+argument-hint: "[site id or name]"
 ---
 
 Import an estate agency's existing website into Nurtur Websites, into the site given: `$ARGUMENTS`.
@@ -15,7 +15,9 @@ You need two sets of tools. Check both are there before you begin:
 Work out which site to import into before anything else; it's the only thing you may need to ask.
 - A number is the site's id: use it.
 - A name: look it up with `find_sites`, and keep the sites waiting for an import. If exactly one fits, use it; if several do, list them with their addresses and ask which; if none is waiting, say what you found, such as a site that's live already, and stop.
-- Nothing given: ask for the site's id, shown at the end of its setup wizard, or its name.
+- Nothing given: list the sites waiting for an import with `find_sites`, `waiting_for_import` set, and show them as a checklist (`- [ ] name (site id): existing website, like for like or onto which template`). Ask which to import. If they pick several, import them one after another, each to the end before the next. If none is waiting, say so: a site is readied for an import in its setup wizard.
+
+One person imports a site at a time. If a site is being imported by someone else, the tools say who; leave it, tell the person, and offer the others.
 
 The import runs to the end without asking the person anything, as it may be left running overnight. Tell them so, and that two things can still pause it, which they can allow now:
 - Claude Code asking permission to use a tool: the `websites` tools, Claude in Chrome and helper agents can be allowed for the session;

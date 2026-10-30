@@ -3,6 +3,10 @@
         "websites": {
             "type": "http",
             "url": "http://mcp.localhost:8002/mcp"
+        },
+        "bugherd": {
+            "type": "http",
+            "url": "https://mcp.bugherd.com/mcp"
         }
     }
 }

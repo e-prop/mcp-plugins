@@ -3,6 +3,10 @@
         "websites": {
             "type": "http",
             "url": "https://mcp.websites.nurtur.digital/mcp"
+        },
+        "bugherd": {
+            "type": "http",
+            "url": "https://mcp.bugherd.com/mcp"
         }
     }
 }
