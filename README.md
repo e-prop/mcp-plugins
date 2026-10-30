@@ -1,0 +1,35 @@
+# Nurtur's plugins for Claude
+
+A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) for Nurtur's products. It holds only plugin manifests and skills: each plugin points Claude at an MCP server that lives in its product's own repository, behind that product's sign-in.
+
+## Using it
+
+In Claude Code (in the Claude desktop app, or the terminal), once:
+
+```
+/plugin marketplace add e-prop/mcp-plugins
+/plugin install nurtur@nurtur
+```
+
+## Plugins
+
+| Plugin | What it does | MCP server |
+| --- | --- | --- |
+| `nurtur` | `/nurtur:import-site <site id>` imports an estate agency's existing website into Nurtur Websites, from the site's setup wizard. Needs Claude in Chrome, and a Nurtur account with the "import websites" permission. | `websites` repository, `routes/ai.php` |
+
+## Adding a plugin
+
+Any of Nurtur's projects can add one: a folder under `plugins/` with `.claude-plugin/plugin.json`, an `.mcp.json` naming its server's address, and its skills, listed in `.claude-plugin/marketplace.json`. Keep the method an agent follows on the server, where it can change without a plugin release, and keep anything private out of this repository: it is public, so people without GitHub access can install it.
+
+Bump a plugin's `version` when it changes, so Claude offers the update.
+
+## Developing locally
+
+`dev/` is a second marketplace, `nurtur-dev`, whose plugins connect to the MCP servers running in Sail. Its plugins share their skills with the production ones. From a checkout:
+
+```
+/plugin marketplace add ~/Documents/GitHub/mcp-plugins/dev
+/plugin install nurtur@nurtur-dev
+```
+
+The desktop app won't sign in to an `http` address, so test against Sail in the terminal (`claude --chrome`).

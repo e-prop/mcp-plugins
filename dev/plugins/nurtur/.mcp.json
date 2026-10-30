@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "websites": {
+            "type": "http",
+            "url": "http://mcp.localhost:8002/mcp"
+        }
+    }
+}
