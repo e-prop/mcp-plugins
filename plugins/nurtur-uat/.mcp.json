@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "websites": {
+            "type": "http",
+            "url": "https://mcp.websites.uat.nurtur.digital/mcp"
+        }
+    }
+}

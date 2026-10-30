@@ -16,12 +16,15 @@ In Claude Code (in the Claude desktop app, or the terminal), once:
 | Plugin | What it does | MCP server |
 | --- | --- | --- |
 | `nurtur` | `/nurtur:import-site <site id>` imports an estate agency's existing website into Nurtur Websites, from the site's setup wizard. Needs Claude in Chrome, and a Nurtur account with the "import websites" permission. | `websites` repository, `routes/ai.php` |
+| `nurtur-uat` | The same, against UAT (`mcp.websites.uat.nurtur.digital`), for testing: `/nurtur-uat:import-site <site id>`. UAT's setup wizard shows it. | the same, on UAT |
 
 ## Adding a plugin
 
 Any of Nurtur's projects can add one: a folder under `plugins/` with `.claude-plugin/plugin.json`, an `.mcp.json` naming its server's address, and its skills, listed in `.claude-plugin/marketplace.json`. Keep the method an agent follows on the server, where it can change without a plugin release, and keep anything private out of this repository: it is public, so people without GitHub access can install it.
 
 Bump a plugin's `version` when it changes, so Claude offers the update.
+
+A plugin's server address is fixed in its `.mcp.json`: an address taken from the environment stops the desktop app signing in. So each environment is a plugin of its own, `nurtur` and `nurtur-uat`, whose skills are kept the same: change both.
 
 ## Developing locally
 

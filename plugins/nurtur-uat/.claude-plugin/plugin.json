@@ -1,0 +1,6 @@
+{
+    "name": "nurtur-uat",
+    "version": "0.2.0",
+    "description": "Nurtur's tools for Claude, connected to UAT rather than production, for testing: import an estate agency's existing website into Nurtur Websites on UAT, from its setup wizard.",
+    "author": { "name": "Nurtur" }
+}
