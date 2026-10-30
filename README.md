@@ -15,8 +15,8 @@ In Claude Code (in the Claude desktop app, or the terminal), once:
 
 | Plugin | What it does | MCP server |
 | --- | --- | --- |
-| `nurtur` | `/nurtur:import-site <site id>` imports an estate agency's existing website into Nurtur Websites, from the site's setup wizard. Needs Claude in Chrome, and a Nurtur account with the "import websites" permission. | `websites` repository, `routes/ai.php` |
-| `nurtur-uat` | The same, against UAT (`mcp.websites.uat.nurtur.digital`), for testing: `/nurtur-uat:import-site <site id>`. UAT's setup wizard shows it. | the same, on UAT |
+| `nurtur` | `/nurtur:import-site <site id or name>` imports an estate agency's existing website into Nurtur Websites, from the site's setup wizard; `/nurtur:edit-site <site id or name>` edits a live site by talking it through, asking before anything destructive or sweeping. Needs a Nurtur account with the "import websites" permission, and Claude in Chrome for imports. | `websites` repository, `routes/ai.php` |
+| `nurtur-uat` | The same, against UAT (`mcp.websites.uat.nurtur.digital`), for testing: `/nurtur-uat:import-site` and `/nurtur-uat:edit-site`. UAT's setup wizard shows it. | the same, on UAT |
 
 ## Adding a plugin
 

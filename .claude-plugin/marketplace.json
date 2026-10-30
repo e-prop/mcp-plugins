@@ -10,7 +10,7 @@
         {
             "name": "nurtur",
             "source": "./plugins/nurtur",
-            "description": "Nurtur's tools for Claude: import an estate agency's existing website into Nurtur Websites, from its setup wizard."
+            "description": "Nurtur's tools for Claude: import an estate agency's existing website into Nurtur Websites from its setup wizard, and edit live sites by talking them through."
         },
         {
             "name": "nurtur-uat",

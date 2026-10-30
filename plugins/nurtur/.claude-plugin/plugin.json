@@ -1,6 +1,6 @@
 {
     "name": "nurtur",
-    "version": "0.2.0",
-    "description": "Nurtur's tools for Claude: import an estate agency's existing website into Nurtur Websites, from its setup wizard.",
+    "version": "0.3.0",
+    "description": "Nurtur's tools for Claude: import an estate agency's existing website into Nurtur Websites, from its setup wizard, and edit live sites by talking them through.",
     "author": { "name": "Nurtur" }
 }
