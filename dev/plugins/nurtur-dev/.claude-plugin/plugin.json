@@ -1,6 +1,6 @@
 {
-    "name": "nurtur",
-    "version": "0.4.0",
+    "name": "nurtur-dev",
+    "version": "0.5.0",
     "description": "Nurtur's tools for Claude, connected to the Nurtur Websites MCP server in Sail, for developing them locally.",
     "author": { "name": "Nurtur" }
 }

@@ -4,9 +4,9 @@
     "metadata": { "description": "Nurtur's plugins for developing locally, connected to the MCP servers in Sail rather than production." },
     "plugins": [
         {
-            "name": "nurtur",
-            "source": "./plugins/nurtur",
-            "description": "The nurtur plugin, connected to mcp.localhost:8002 rather than production."
+            "name": "nurtur-dev",
+            "source": "./plugins/nurtur-dev",
+            "description": "The nurtur plugin, connected to mcp.localhost:8002 rather than production. Named apart, so its commands (/nurtur-dev:import-site) never clash with production's."
         }
     ]
 }

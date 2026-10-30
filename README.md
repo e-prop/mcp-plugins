@@ -24,15 +24,17 @@ Any of Nurtur's projects can add one: a folder under `plugins/` with `.claude-pl
 
 Bump a plugin's `version` when it changes, so Claude offers the update.
 
-A plugin's server address is fixed in its `.mcp.json`: an address taken from the environment stops the desktop app signing in. So each environment is a plugin of its own, `nurtur` and `nurtur-uat`, whose skills are kept the same: change both.
+A plugin's server address is fixed in its `.mcp.json`: an address taken from the environment stops the desktop app signing in. So each environment is a plugin of its own, `nurtur`, `nurtur-uat` and `nurtur-dev`, whose skills are kept the same: change `nurtur` and `nurtur-uat` (`nurtur-dev` links to `nurtur`'s).
 
 ## Developing locally
 
-`dev/` is a second marketplace, `nurtur-dev`, whose plugins connect to the MCP servers running in Sail. Its plugins share their skills with the production ones. From a checkout:
+`dev/` is a second marketplace, `nurtur-dev`, whose plugin `nurtur-dev` connects to the MCP servers running in Sail. It shares its skills with the production plugin. From a checkout:
 
 ```
 /plugin marketplace add ~/Documents/GitHub/mcp-plugins/dev
-/plugin install nurtur@nurtur-dev
+/plugin install nurtur-dev@nurtur-dev
 ```
+
+Its plugin is `nurtur-dev`, so its commands are `/nurtur-dev:import-site` and `/nurtur-dev:edit-site`, and never clash with production's when both are installed.
 
 The desktop app won't sign in to an `http` address, so test against Sail in the terminal (`claude --chrome`).
