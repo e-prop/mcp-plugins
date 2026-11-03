@@ -24,11 +24,11 @@ Any of Nurtur's projects can add one: a folder under `plugins/` with `.claude-pl
 
 Bump a plugin's `version` when it changes, so Claude offers the update.
 
-A plugin's server address is fixed in its `.mcp.json`: an address taken from the environment stops the desktop app signing in. So each environment is a plugin of its own, `nurtur`, `nurtur-uat` and `nurtur-dev`, whose skills are kept the same: change `nurtur` and `nurtur-uat` (`nurtur-dev` links to `nurtur`'s).
+A plugin's server address is fixed in its `.mcp.json`: an address taken from the environment stops the desktop app signing in. So each environment is a plugin of its own, `nurtur`, `nurtur-uat` and `nurtur-dev`, whose skills are kept the same: change `nurtur`, `nurtur-uat` and `nurtur-dev` together. Each holds a copy: Claude Code installs a plugin by copying it, and leaves a symbolic link out, so a plugin linking to another's skills is installed without them.
 
 ## Developing locally
 
-`dev/` is a second marketplace, `nurtur-dev`, whose plugin `nurtur-dev` connects to the MCP servers running in Sail. It shares its skills with the production plugin. From a checkout:
+`dev/` is a second marketplace, `nurtur-dev`, whose plugin `nurtur-dev` connects to the MCP servers running in Sail. Its skills are a copy of the production plugin's. From a checkout:
 
 ```
 /plugin marketplace add ~/Documents/GitHub/mcp-plugins/dev
