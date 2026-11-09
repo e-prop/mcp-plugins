@@ -1,0 +1,6 @@
+{
+    "name": "members-hub-uat",
+    "version": "0.1.0",
+    "description": "The members-hub plugin, connected to UAT rather than production, for testing.",
+    "author": { "name": "Nurtur" }
+}

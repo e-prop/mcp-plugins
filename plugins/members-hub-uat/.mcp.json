@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "members-hub": {
+            "type": "http",
+            "url": "https://api.members.uat.nurtur.tech/mcp"
+        }
+    }
+}

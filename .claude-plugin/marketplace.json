@@ -16,6 +16,16 @@
             "name": "nurtur-uat",
             "source": "./plugins/nurtur-uat",
             "description": "The nurtur plugin, connected to UAT (mcp.websites.uat.nurtur.digital) rather than production, for testing."
+        },
+        {
+            "name": "members-hub",
+            "source": "./plugins/members-hub",
+            "description": "Ask Nurtur's members hubs about their pages, news, events, files, suppliers, offices and properties, as yourself, on the hub you were last on."
+        },
+        {
+            "name": "members-hub-uat",
+            "source": "./plugins/members-hub-uat",
+            "description": "The members-hub plugin, connected to UAT (api.members.uat.nurtur.tech) rather than production, for testing."
         }
     ]
 }

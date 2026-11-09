@@ -7,6 +7,11 @@
             "name": "nurtur-dev",
             "source": "./plugins/nurtur-dev",
             "description": "The nurtur plugin, connected to mcp.localhost:8002 rather than production. Named apart, so its commands (/nurtur-dev:import-site) never clash with production's."
+        },
+        {
+            "name": "members-hub-dev",
+            "source": "./plugins/members-hub-dev",
+            "description": "The members-hub plugin, connected to core in Sail (localhost:8000) rather than production."
         }
     ]
 }

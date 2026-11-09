@@ -1,0 +1,6 @@
+{
+    "name": "members-hub-dev",
+    "version": "0.1.0",
+    "description": "The members-hub plugin, connected to core running in Sail, for developing it locally.",
+    "author": { "name": "Nurtur" }
+}
