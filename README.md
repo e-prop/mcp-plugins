@@ -17,6 +17,8 @@ In Claude Code (in the Claude desktop app, or the terminal), once:
 | --- | --- | --- |
 | `nurtur` | `/nurtur:import-site <site id or name>` imports an estate agency's existing website into Nurtur Websites, from the site's setup wizard; `/nurtur:edit-site <site id or name>` edits a live site by talking it through, or works through its BugHerd tasks, asking before anything destructive or sweeping. Brings BugHerd's (`mcp.bugherd.com`) and Atlassian's (`mcp.atlassian.com`) MCP servers too, to work through BugHerd tasks and raise what needs a developer on the EP board, labelled `websites_mcp`. Needs a Nurtur account with the "import websites" permission, and Claude in Chrome for imports. | `websites` repository, `routes/ai.php` |
 | `nurtur-uat` | The same, against UAT (`mcp.websites.uat.nurtur.digital`), for testing: `/nurtur-uat:import-site` and `/nurtur-uat:edit-site`. UAT's setup wizard shows it. | the same, on UAT |
+| `members-hub` | Answers questions from Nurtur's members hubs (their pages, news, events, files, private knowledge bank, and the products each hub uses) as the signed-in user, on the hub they were last on; `list-hubs` and `open-hub` move between hubs. Needs a role that may use the hub assistant, on a hub with its assistant switched on. | `property-logic` repository, `routes/ai.php` |
+| `members-hub-uat` | The same, against UAT (`api.members.uat.nurtur.tech`), for testing. | the same, on UAT |
 
 ## Adding a plugin
 
